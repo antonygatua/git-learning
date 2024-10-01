@@ -16,12 +16,11 @@ As a result, developers will have to toss around the latest code via email or ot
 
 ## Key concepts
 Essential to understanding how version control systems actually work.
-<ol>
-	<li><h3>Repository (repo)</></li>
-	This is where all the project files and history of changes are stored. It acts a special type of database for the project files and its version history
-	<p>**Types**</p>
+### 1. Repository (repo)
+This is where all the project files and history of changes are stored. It acts a special type of database for the project files and its version history
+**Types**
 	* **Local Repository** - Stored on your computer
 	* **Remote Repository** - Stored on a server (e.g., GitHub, GitLab, BitBucket) 
-</ol>
-
-
+### 2. **Commit**
+Refers to a snapshot of your project at a specific point in time. Each commit represents a recorded change to your project, with a message describing what was done.
+**Commit Message**: A description of the changes made, which should be clear and concise.
