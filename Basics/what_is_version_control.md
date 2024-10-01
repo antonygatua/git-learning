@@ -15,3 +15,13 @@ Without version control system, developers are tempted to keep multiple copies o
 As a result, developers will have to toss around the latest code via email or other mechanisms and then merge the changes. Version control solves this problem by managing all versions of the code but presenting the team with a single version at a time.
 
 ## Key concepts
+Essential to understanding how version control systems actually work.
+<ol>
+	<li><h3>Repository (repo)</></li>
+	This is where all the project files and history of changes are stored. It acts a special type of database for the project files and its version history
+	<p>**Types**</p>
+	* **Local Repository** - Stored on your computer
+	* **Remote Repository** - Stored on a server (e.g., GitHub, GitLab, BitBucket) 
+</ol>
+
+
