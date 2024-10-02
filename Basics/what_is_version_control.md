@@ -78,4 +78,4 @@ A **diff** shows the difference between two commits or branches, highlighting wh
 **Pull**: Fetching changes from the remote repository to your local machine and applying them to your current branch.
 
 ### 17. Remote
-			A **remote** is a pointer to a version of your repository hosted elsewhere, usually on a server. It allows multiple people to collaborate on the same project.
+A **remote** is a pointer to a version of your repository hosted elsewhere, usually on a server. It allows multiple people to collaborate on the same project.
