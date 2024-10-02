@@ -18,9 +18,64 @@ As a result, developers will have to toss around the latest code via email or ot
 Essential to understanding how version control systems actually work.
 ### 1. Repository (repo)
 This is where all the project files and history of changes are stored. It acts a special type of database for the project files and its version history.
+
 **Types**
 1. **Local Repository** - Stored on your computer
 2. **Remote Repository** - Stored on a server (e.g., GitHub, GitLab, BitBucket) 
 ### 2. **Commit**
 Refers to a snapshot of your project at a specific point in time. Each commit represents a recorded change to your project, with a message describing what was done.
-**Commit Message**: A description of the changes made, which should be clear and concise.
+
+**Commit Message**: A description of the changes made, which should be clear and concise.\
+
+### 3. Branch
+A **branch** allows you to work on different versions or features of your project in parallel without affecting the main code base (often called the `main` or `master` branch)
+
+**Example**: Can create a branch for a new feature or bug fix, test your changes, and later merge them into the main project.
+
+### 4. Merge
+**Merging** integrates the changes from one branch into another. Often done when one feature is complete and ready to be combined with the main project.
+
+**Merge Conflict**: Happens when changes in two branches are incompatible. These conflicts need to be resolved manually.
+
+### 5. Pull Request (PR) or Merge Request (MR)
+A pull request is a request to merge changes from one branch into another, usually after code reviews and approvals in collaborative environments.
+
+It facilitates collaboration by allowing others to review and discuss changes before they are integrated.
+
+### 6. Staging Area (Index)
+The **staging** are is where changes are prepared before making a commit. You can add specific changes to the staging area (using `git add` in Git), allowing you to commit only parts of your changes.
+
+### 7. Checkout
+**Checking out** a commit or a branch means switching your work directly to match the specified commit or branch, allowing you to view or modify that version of the project.
+
+### 8. Tag
+A **tag** is a label that marks a specific commit as important, often used for releases (e.g., `v1.0.0`). Tags make it easier to find and reference particular versions of your project.
+
+### 9. Fork 
+A **fork** is a copy of a repository that allows you to experiment and work independently of the original project. Commonly used in open-source projects where contributors fork a repo to make changes before proposing them back.
+
+### 10. Revert
+**Reverting** means undoing changes by creating a new commit that undoes the effect of previous commits, without altering the commit history.
+
+### 11. Reset
+**Resetting** allows you to move the pointer of a branch backward in time to an earlier commit, effectively removing changes from the history. It can be **more destructive** that revert, as it can erase changes.
+
+### 12. Clone
+**Cloning** a repository means copying it from a remote server (like GitHub) to your local machine. It gives you access to the full project history and all its files
+
+### 13. Conflict
+A **conflict** occurs when two changes in different branches cannot be automatically merged because they affect the same lines of code. 
+
+### 14. Blame
+**Blame** is a command (e.g., `git blame`) that shows who made the last modification to each line of a file, useful for tracking responsibility for changes.
+
+### 15. Diff
+A **diff** shows the difference between two commits or branches, highlighting what has been added, modified, or deleted. This helps in reviewing changes.
+
+### 16. Push/Pull
+**Push**: Sending your local changes to the remote repository (e.g., pushing commits from your machine to GitHub).
+
+**Pull**: Fetching changes from the remote repository to your local machine and applying them to your current branch.
+
+### 17. Remote
+			A **remote** is a pointer to a version of your repository hosted elsewhere, usually on a server. It allows multiple people to collaborate on the same project.
