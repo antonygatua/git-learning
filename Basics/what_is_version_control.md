@@ -128,3 +128,39 @@ Many people's version control method of choice is to copy files into another dir
 One of the most popular VCS tools was **RCS**(*Revision control system*):- Works by keeping patch sets(*difference between files*) in a special format disk. It can then re-create what any file looked like at any point in time by adding up all the patches.
 
 ### 2. Centralized Version Control System
+The next major issue encountered is the need to **collaborate** with other developers on other systems, and to deal with this problems, Centralized Version Control System were developed. These systems (*e.g., Concurrent Version System, Subversion, and Perforce*) have a single server that contains all the versioned files, and a number of clients that check out files from that central place.  
+
+Has been the standard for version control for many years
+
+![centralized version control](../resources/centralized.png)
+`Figure 2. Centralized version contol diagram`
+
+#### Pros
+* Easier to manage access and permissions.
+* Simplified Collaboration with a single source of truth
+
+#### Cons 
+* Single point of failure
+	* if the central server goes down, no one can collaborate
+	* If the hard-disk in the central database is corrupted and proper backups haven't been kept, you lose absolutely everything - the entire history of the project except whatever single snapshots people happen to have on their local machines
+* Limited offline capabilities; Users need internet access to commit changes.
+### 3. Distributed Version Control System 
+In DVCSs(*e.g., Git, Mercurial or Darcs*) clients don't just checkout the latest snapshot of the files; rather, they fully mirror the repository, including its full history.
+
+If any server dies, and these systems were collaborating via that server, any of the clients repositories can be copied back up to the server to restore it.
+
+Every clone is a full back up of all the data.
+
+![distributed version control](../resources/distributed.png)
+`Figure 3. Distributed version control system`
+
+Many of these systems deal pretty well having several remote repositories they can work with, and you can collaborate with different groups of people in different ways simultaneously within the same project.
+
+#### Pros
+* Full history available locally, enabling offline work
+* Facilitates branching and merging enhancing collaboration
+* Allows for distributed workflows, making it easier to work on multiple features simultaneously
+
+#### Cons
+* More complex set up and workflows compared to CVCSs
+* Users must mange synchronization with the central repository.
