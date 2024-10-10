@@ -133,6 +133,7 @@ The next major issue encountered is the need to **collaborate** with other devel
 Has been the standard for version control for many years
 
 ![centralized version control](../resources/centralized.png)
+
 `Figure 2. Centralized version contol diagram`
 
 #### Pros
