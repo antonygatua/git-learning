@@ -109,3 +109,22 @@ A **remote** is a pointer to a version of your repository hosted elsewhere, usua
 - **Integration with CI/CD**: Version control can trigger automated processes for testing, building, and deploying projects.
 
 **Example**: With version control, developers can collaborate across time zones, review each other's work, and experiment with new ideas while keeping the main codebase stable and clean.
+
+## Types of Version Control Systems
+### 1. Local Version Control Systems 
+Many people's version control method of choice is to copy files into another directory(*perhaps a time-shaped directory if they're clever*). This approach is very common because it is so simple, but it is also incredibly error prone. Very easy to forget which directory you're in and accidentally write to the wrong file or copy over files you don't mean to. To deal with this issue, programmers developed local VCSs that had  a simple database that kept all changes to files under version control.
+
+![local version control system](../resources/local.png)
+`Figure 1. local version control diagram`
+
+#### Pros
+* Fast access to history since it's stored locally
+* Simple to set up and use
+
+#### Cons
+* Limited collaboration capabilities
+* Risk of data loss if the local machine fails
+
+One of the most popular VCS tools was **RCS**(*Revision control system*):- Works by keeping patch sets(*difference between files*) in a special format disk. It can then re-create what any file looked like at any point in time by adding up all the patches.
+
+### 2. Centralized Version Control System
